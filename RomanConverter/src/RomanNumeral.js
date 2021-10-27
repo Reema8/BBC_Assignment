@@ -54,17 +54,13 @@ export default class RomanNumeralGenerator {
 	
     // Used .map for iteration in place of for loop.
     this.mainArray.map(item => {
-      let numDecimal = item[0]; //item[0] is the decimal, e.g. 10
-      let numNumeral = item[1]; //item[1] is the numeral, e.g. X
-      // while number is divisible (mod) by current decimal without a remainder greater than itself
+      let numDecimal = item[0];
+      let numNumeral = item[1]; 
       while (num % numDecimal < num) {
-        // add the current roman numeral to our result string
         result += numNumeral;
-        // remove the current decimal from our number
         num -= numDecimal;
       }
     });
-    // Return the final result string
     return result;
   }
 }
