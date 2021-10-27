@@ -1,0 +1,24 @@
+{
+  "name": "roman-converter",
+  "version": "0.1.0",
+  "description": "Convert an integer to Roman Numerals (between 1 - 3999)",
+  "main": "/src/RomanNumeral.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.5"
+  },
+  "scripts": {
+    "test": "mocha --require babel-polyfill --require babel-register"
+  }
+}
